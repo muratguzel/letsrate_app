@@ -1,9 +1,9 @@
-<div class="car">
-	<strong><%= car %></strong>
+<div class="car" style="border:1px solid #ececec; margin-bottom:4px; padding:4px;">
+	<strong><%= link_to car, car_path(car) %></strong>
 	<br />
-	<%= car.title %>
+	<i><%= car.title %></i>
 	<br /><br />
 	Performance <%= rating_for car, "performance" %>
 	Price <%= rating_for car, "price" %>
-	Beauty <%= rating_for car, "beauty" %>
+	Beauty <%= rating_for car, "beauty" %>	
 </div>

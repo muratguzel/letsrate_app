@@ -5,4 +5,6 @@ Letsrateapp::Application.routes.draw do
   devise_for :users
 
   match '/rate' => 'rater#create', :as => 'rate'
+  match '/main' => 'home#main', :as => 'login_success'
+
 end

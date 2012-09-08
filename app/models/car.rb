@@ -5,4 +5,7 @@ class Car < ActiveRecord::Base
   def to_s
   	[brand, model].compact.join(', ')
   end
+
+
+
 end
