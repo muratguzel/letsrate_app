@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Brand:</b>
+  <%= @car.brand %>
+</p>
+
+<p>
+  <b>Model:</b>
+  <%= @car.model %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @car.title %>
+</p>
+
+<p>
+	Performance : <%= rating_for @car, "performance" %>
+</p>
+
+<p>
+	Price : <%= rating_for @car, "price" %>
+</p>
+
+<p>
+	Beauty : <%= rating_for @car, "beauty" %>
+</p>
+
+
+<%= link_to 'Edit', edit_car_path(@car) %> |
+<%= link_to 'Back', cars_path %>
